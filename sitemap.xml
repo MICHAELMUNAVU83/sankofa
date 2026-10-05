@@ -4,15 +4,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
 >
   <url>
-    <loc>https://sankofa.africa/</loc>
-    <lastmod>2026-10-04</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sankofa.africa/" />
-    <xhtml:link rel="alternate" hreflang="am" href="https://sankofa.africa/am/" />
+    <loc>https://sankofa-consulting.africa/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sankofa-consulting.africa/" />
+    <xhtml:link rel="alternate" hreflang="am" href="https://sankofa-consulting.africa/am/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sankofa-consulting.africa/" />
   </url>
   <url>
-    <loc>https://sankofa.africa/am/</loc>
-    <lastmod>2026-10-04</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sankofa.africa/" />
-    <xhtml:link rel="alternate" hreflang="am" href="https://sankofa.africa/am/" />
+    <loc>https://sankofa-consulting.africa/am/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sankofa-consulting.africa/" />
+    <xhtml:link rel="alternate" hreflang="am" href="https://sankofa-consulting.africa/am/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sankofa-consulting.africa/" />
   </url>
 </urlset>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sankofa.africa/sitemap.xml
+Sitemap: https://sankofa-consulting.africa/sitemap.xml

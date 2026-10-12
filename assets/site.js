@@ -34,18 +34,22 @@
     });
   });
 
-  // TODO: replace with real submission before launch. Until then, forms
-  // only confirm on screen and nothing is sent.
-  document
-    .querySelectorAll("form[data-success]")
-    .forEach(function (form) {
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        form.querySelector(".form-status").textContent =
-          form.dataset.success;
-        form.reset();
-      });
-    });
+  // Newsletter signup is still a placeholder until an email platform is chosen.
+  var newsletter = document.getElementById("newsletter");
+  newsletter.addEventListener("submit", function (e) {
+    e.preventDefault();
+    newsletter.querySelector(".form-status").textContent =
+      newsletter.dataset.success;
+    newsletter.reset();
+  });
+
+  // FormSubmit redirects successful enquiries back with this query parameter.
+  // Replace the URL so refreshing the page does not repeat the confirmation.
+  var params = new URLSearchParams(location.search);
+  if (params.get("submitted") === "1") {
+    enquiry.querySelector(".form-status").textContent = enquiry.dataset.success;
+    history.replaceState(null, "", location.pathname + "#contact");
+  }
 
   // Insights topic filter.
   var filters = document.querySelectorAll(".filters button");

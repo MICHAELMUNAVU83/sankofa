@@ -36,7 +36,7 @@
 
   // Newsletter signup is still a placeholder until an email platform is chosen.
   var newsletter = document.getElementById("newsletter");
-  newsletter.addEventListener("submit", function (e) {
+  if (newsletter) newsletter.addEventListener("submit", function (e) {
     e.preventDefault();
     newsletter.querySelector(".form-status").textContent =
       newsletter.dataset.success;
@@ -46,7 +46,7 @@
   // FormSubmit redirects successful enquiries back with this query parameter.
   // Replace the URL so refreshing the page does not repeat the confirmation.
   var params = new URLSearchParams(location.search);
-  if (params.get("submitted") === "1") {
+  if (enquiry && params.get("submitted") === "1") {
     enquiry.querySelector(".form-status").textContent = enquiry.dataset.success;
     history.replaceState(null, "", location.pathname + "#contact");
   }

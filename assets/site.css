@@ -624,6 +624,120 @@ footer .legal {
   }
 }
 
+/* Ethiopia course catalogue and registration. */
+section[id] {
+  scroll-margin-top: 100px;
+}
+.training-intro h1 {
+  max-width: 900px;
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1.12;
+  color: var(--brown);
+  margin-bottom: 24px;
+}
+.training-intro p + p,
+.course-note {
+  margin-top: 20px;
+  max-width: 780px;
+}
+.course-note {
+  color: var(--stone);
+  font-size: 15px;
+}
+.course-group {
+  border: 0;
+  margin-top: 40px;
+  min-width: 0;
+}
+.course-group legend {
+  width: 100%;
+  color: var(--brown);
+  font-size: 22px;
+  font-weight: 500;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--brown);
+}
+.course-option {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr) minmax(210px, 0.5fr);
+  gap: 20px;
+  align-items: start;
+  padding: 24px 16px;
+  border-bottom: 1px solid var(--sand);
+  cursor: pointer;
+  scroll-margin-top: 110px;
+}
+.course-option:hover,
+.course-option:has(input:checked) {
+  background: var(--parchment);
+}
+.course-option input {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  accent-color: var(--brown);
+}
+.course-title {
+  font-weight: 500;
+  color: var(--brown);
+}
+.course-number {
+  display: inline-block;
+  min-width: 30px;
+  color: var(--bronze);
+}
+.course-meta {
+  display: grid;
+  gap: 4px;
+  font-size: 14px;
+  color: var(--stone);
+}
+.course-meta strong {
+  color: var(--brown);
+}
+.selected-courses {
+  padding: 18px;
+  background: var(--parchment);
+  font-size: 14px;
+}
+.selected-courses p {
+  margin: 8px 0;
+}
+.registration-options {
+  border: 1px solid var(--sand);
+  padding: 16px;
+  min-width: 0;
+}
+.registration-options legend {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 6px;
+}
+.registration-options label {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.registration-options input {
+  width: auto;
+  flex-shrink: 0;
+  accent-color: var(--brown);
+}
+.training-page address a {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 1100px) {
+  .nav ul { gap: 16px; }
+  .nav > .btn { padding: 12px 14px; font-size: 13px; }
+}
+@media (max-width: 600px) {
+  .course-option { grid-template-columns: 22px minmax(0, 1fr); gap: 12px; padding: 20px 8px; }
+  .course-meta { grid-column: 2; }
+  .nav { flex-wrap: wrap; height: auto; min-height: 84px; gap: 8px; padding-top: 12px; padding-bottom: 12px; }
+  .nav > .btn { flex-basis: 100%; text-align: center; }
+  .nav ul.open { top: 100%; }
+}
+
 /* Amharic: Poppins keeps Latin and numerals, Noto Sans Ethiopic carries the
    Ethiopic script, which needs more line height and no tracking. */
 :lang(am) {

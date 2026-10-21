@@ -695,6 +695,25 @@ section[id] {
 .course-meta strong {
   color: var(--brown);
 }
+.course-price b {
+  font-weight: 500;
+  color: var(--brown);
+}
+.course-fees {
+  margin-top: 36px;
+  padding: 24px;
+  background: var(--parchment);
+  scroll-margin-top: 110px;
+  font-size: 15px;
+}
+.course-fees h3 {
+  color: var(--brown);
+  font-size: 20px;
+  font-weight: 500;
+}
+.course-fees p {
+  margin-top: 12px;
+}
 .selected-courses {
   padding: 18px;
   background: var(--parchment);

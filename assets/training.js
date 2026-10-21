@@ -25,7 +25,7 @@
 
   if (params.get("registered") === "1") {
     var status = document.getElementById("registration-status");
-    status.textContent = "Thank you. Your registration has been submitted. Shibeshi will follow up to confirm fees, dates and availability.";
+    status.textContent = "Thank you. Your registration has been submitted. Sankofa Consulting will follow up to confirm dates, availability and your booking details.";
     status.focus();
     history.replaceState(null, "", location.pathname + "#registration");
   }
